@@ -11,17 +11,86 @@
     <title>My personal assisten</title>
 </head>
 <body>
+
+    <nav class="container flex justify-around py-8 mx-auto">
+        <div class="flex items-center">
+          <h3 class="text-2xl font-medium text-rose-700">LOGO</h3>
+        </div>
+        <!-- left header section -->
+        <div class="items-center hidden space-x-8 lg:flex">
+          <a href="">Home</a>
+          <a href="">About Us</a>
+          <a href="">Blogs</a>
+          <a href="">Our Team</a>
+          <a href="">Contact Us</a>
+        </div>
+        <!-- right header section -->
+        <div class="flex items-center space-x-2">
+          <button class="px-4 py-2 text-blue-100 bg-rose-700 rounded-md">
+            Sign in
+          </button>
+          <button class="px-4 py-2 text-gray-200 bg-pink-700 rounded-md">
+            Sign up
+          </button>
+        </div>
+      </nav>
+
+    
 <section class="text-center">
-    <h1 class="text-4xl font-semibold text-pink-600 mt-7">Your personal Asistent</h1>
-    <img onclick="recogniton.start()" class="mx-auto mt-10 image" src="animation.gif" alt="">
+    <h1 class="text-4xl font-semibold text-pink-600 mt-14">Your personal Asistent</h1>
+    <img onclick="recogniton.start()" class="mx-auto mt-14 image" src="animation.gif" alt="">
 
     <h4 id="my-voice"></h4>
 
-    <h5 class="mt-6 text-rose-600">Tap and say your comand</h5>
+    <h5 class="mt-10 text-rose-600">Tap and say your comand</h5>
 
 </section>
 
-
+<footer class="bg-gray-100 text-center mt-32">
+    <div class="px-6 pt-6">
+      <form action="">
+        <div class="grid md:grid-cols-3 gird-cols-1 gap-4 flex justify-center items-center">
+          <div class="md:ml-auto md:mb-6">
+            <p class="text-gray-800">
+              <strong>Sign up for our newsletter</strong>
+            </p>
+          </div>
+  
+          <div class="md:mb-6">
+            <input
+              type="text"
+              class="
+                form-control
+                block
+                w-full
+                px-3
+                py-1.5
+                text-base
+                font-normal
+                text-gray-700
+                bg-white bg-clip-padding
+                border border-solid border-gray-300
+                rounded
+                transition
+                ease-in-out
+                m-0
+                focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none
+              "
+              id="exampleFormControlInput1"
+              placeholder="Email address"/>
+          </div>
+  
+          <div class="md:mr-auto mb-6">
+            <button type="button" class="inline-block px-6 py-2.5 bg-rose-700 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Subscribe</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  
+    <div class="text-center text-gray-700 p-4">
+      <p class="opacity-50">© 2021 Copyright by Ashikul islam ifty</p>
+    </div>
+  </footer>
 
     <script src="assistent.js"></script>
 </body>
