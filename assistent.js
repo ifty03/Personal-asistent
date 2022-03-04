@@ -48,6 +48,9 @@ function read(text){
     else if(text == "what's your name"){
         speech.text="my name is alexa im your assistent";
     }
+    else if(text == "you are so cute"){
+        speech.text="i know that but you are so pretty";
+    }
 
     window.speechSynthesis.speak(speech);
 }
