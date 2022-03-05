@@ -51,6 +51,25 @@ function read(text){
     else if(text == "you are so cute"){
         speech.text="i know that but you are so pretty";
     }
+    else if(text == "what is your name"){
+        speech.text="amar nam alexa";
+    }
+
+    else if(text == "Tomar Naam Ki"||(text =="tumhara naam ki")){
+        speech.text="amar nam alexa";
+    }
+    else if(text == "are you mad"){
+        speech.text="tui paagol tor choddogosti paagol";
+    }
+    else if(text == "Tumi Ki Khao"){
+        speech.text="ami javascript code khai";
+    }
+    else if(text == "what's your favourite food"){
+        speech.text="I don't eat anything";
+    }
+    else if(text == "read me a news"){
+        speech.text="akta mosar dakkha kheye arekta hati mar gece";
+    }
 
     window.speechSynthesis.speak(speech);
 }
