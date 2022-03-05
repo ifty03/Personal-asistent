@@ -67,9 +67,7 @@ function read(text){
     else if(text == "what's your favourite food"){
         speech.text="I don't eat anything";
     }
-    else if(text == "read me a news"){
-        speech.text="akta mosar dakkha kheye arekta hati mar gece";
-    }
+
 
     window.speechSynthesis.speak(speech);
 }
