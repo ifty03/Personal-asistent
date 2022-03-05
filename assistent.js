@@ -9,7 +9,7 @@ recogniton.onresult = function(event){
 function read(text){
     var speech = new SpeechSynthesisUtterance();
     speech.text = text;
-    if(text =="i love you"){
+    if(text =="I love you"){
         speech.text="sorry i have a cute girlfriend i don't accepet your request";
     }
     else if(text == "hello"){
@@ -67,7 +67,28 @@ function read(text){
     else if(text == "what's your favourite food"){
         speech.text="I don't eat anything";
     }
-
+    else if(text == "Mariya's boyfriend name" ||(text == "Mariya boyfriend name")){
+        speech.text="I can't say maris's boyfriend name because She has many boyfriends"
+    }
+    else if(text == "Halima boyfriend" ||(text == "Halima boyfriend name")){
+        speech.text="I can't say halima's boyfriend name because She has many boyfriends"
+    }
+    else if(text == "shahinoor's boyfriend name" ||(text == "shahinoor boyfriend name")){
+        speech.text="I can't say sahinur's boyfriend name because She has many boyfriends"
+    }
+    else if(text == "habiba's boyfriend name" ||(text == "Habiba boyfriend name")){
+        speech.text="I can't say habiba's boyfriend name because She has many boyfriends";
+    }
+    else if(text == "Ami tomake Bhalobashi"){
+        speech.text="ammar akta cute girlfriend ace i love her very much"
+    }
+    else if(text == "Aashiq girlfriend name"){
+        speech.text="Ashik has no girlfriend he is single now but He will not go into any relationship"
+    }
+    else{
+        speech.text=`i don't know ${text}`;
+        document.getElementById("her-voice").innerText=`i don't know ${text}`
+    }
 
     window.speechSynthesis.speak(speech);
 }
